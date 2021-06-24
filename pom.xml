@@ -4,12 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.coding.cloud</groupId>
+    <groupId>com.coding.cloud.mall</groupId>
     <artifactId>mall-swarm</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>mall-mbg</module>
         <module>mall-common</module>
+        <module>mall-gateway</module>
     </modules>
     <packaging>pom</packaging>
     <parent>
@@ -96,15 +97,15 @@
             </dependency>
             <!--mall通用模块-->
             <dependency>
-                <groupId>com.macro.mall</groupId>
+                <groupId>com.coding.cloud.mall</groupId>
                 <artifactId>mall-common</artifactId>
-                <version>${mall-common.version}</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <!--mall中MBG生成模块-->
             <dependency>
-                <groupId>com.macro.mall</groupId>
+                <groupId>com.coding.cloud.mall</groupId>
                 <artifactId>mall-mbg</artifactId>
-                <version>${mall-mbg.version}</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <!--MyBatis分页插件starter-->
             <dependency>

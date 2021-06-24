@@ -1,12 +1,12 @@
 package com.coding.cloud.mall.common.domain;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 
 @Data
 @Builder
 @EqualsAndHashCode(callSuper = false)
+@NoArgsConstructor
+@AllArgsConstructor
 public class WebLog {
     /**
      * 操作描述
