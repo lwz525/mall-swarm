@@ -15,11 +15,11 @@ spring:
           filters:
             - StripPrefix=1
         - id: mall-admin
-            uri: lb://mall-admin
-            predicates:
-              - Path=/mall-admin/**
-            filters:
-              - StripPrefix=1
+          uri: lb://mall-admin
+          predicates:
+            - Path=/mall-admin/**
+          filters:
+            - StripPrefix=1
   security:
     oauth2:
       resourceserver:
@@ -59,7 +59,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: *
+        include: '*'
   endpoint:
     health:
       show-details: always
