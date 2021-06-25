@@ -39,3 +39,6 @@ local.properties
 *.rar
 hs_err_pid*
 .idea
+target/
+.classpath
+.project

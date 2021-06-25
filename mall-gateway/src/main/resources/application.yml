@@ -1,5 +1,5 @@
 server:
-  port: 8201
+  port: 18201
 spring:
   cloud:
     gateway:
@@ -27,34 +27,34 @@ spring:
           jwk-set-uri: 'http://localhost:8201/mall-auth/rsa/publicKey' #配置RSA的公钥访问地址
   redis:
     database: 0
-    port: 6379
+    port: 16379
     host: localhost
     password:
-  secure:
-    ignore:
-      urls: #配置白名单路径
-        - "/doc.html"
-        - "/swagger-resources/**"
-        - "/swagger/**"
-        - "/**/v2/api-docs"
-        - "/**/*.js"
-        - "/**/*.css"
-        - "/**/*.png"
-        - "/**/*.ico"
-        - "/webjars/springfox-swagger-ui/**"
-        - "/actuator/**"
-        - "/mall-auth/oauth/token"
-        - "/mall-auth/rsa/publicKey"
-        - "/mall-search/**"
-        - "/mall-portal/sso/login"
-        - "/mall-portal/sso/register"
-        - "/mall-portal/sso/getAuthCode"
-        - "/mall-portal/home/**"
-        - "/mall-portal/product/**"
-        - "/mall-portal/brand/**"
-        - "/mall-admin/admin/login"
-        - "/mall-admin/admin/register"
-        - "/mall-admin/minio/upload"
+secure:
+  ignore:
+    urls: #配置白名单路径
+      - "/doc.html"
+      - "/swagger-resources/**"
+      - "/swagger/**"
+      - "/**/v2/api-docs"
+      - "/**/*.js"
+      - "/**/*.css"
+      - "/**/*.png"
+      - "/**/*.ico"
+      - "/webjars/springfox-swagger-ui/**"
+      - "/actuator/**"
+      - "/mall-auth/oauth/token"
+      - "/mall-auth/rsa/publicKey"
+      - "/mall-search/**"
+      - "/mall-portal/sso/login"
+      - "/mall-portal/sso/register"
+      - "/mall-portal/sso/getAuthCode"
+      - "/mall-portal/home/**"
+      - "/mall-portal/product/**"
+      - "/mall-portal/brand/**"
+      - "/mall-admin/admin/login"
+      - "/mall-admin/admin/register"
+      - "/mall-admin/minio/upload"
 management:
   endpoints:
     web:

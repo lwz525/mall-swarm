@@ -21,7 +21,7 @@ public class GlobalCorsConfig {
         CorsConfiguration config = new CorsConfiguration();
         config.addAllowedMethod("*");
         config.addAllowedOrigin("*");
-        config.addExposedHeader("*");
+        config.addAllowedHeader("*");
         config.setAllowCredentials(true);
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource(new PathPatternParser());
         source.registerCorsConfiguration("/**", config);
