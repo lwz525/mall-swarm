@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:18848
+      config:
+        server-addr: http://localhost:18848
+logging:
+  level:
+    root: debug

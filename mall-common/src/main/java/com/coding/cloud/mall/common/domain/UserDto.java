@@ -8,7 +8,7 @@ import java.util.List;
 
 @Data
 @Builder
-@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode
 public class UserDto {
     private Long         id;
     private String       username;

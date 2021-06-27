@@ -11,6 +11,7 @@
         <module>mall-mbg</module>
         <module>mall-common</module>
         <module>mall-gateway</module>
+        <module>mall-auth</module>
     </modules>
     <packaging>pom</packaging>
     <parent>
